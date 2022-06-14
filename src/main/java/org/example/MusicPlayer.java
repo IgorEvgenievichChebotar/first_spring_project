@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-/*@Component*/
+@Component
 @Scope("prototype")
 public class MusicPlayer{
     private List<Music> music_list;
@@ -19,7 +19,7 @@ public class MusicPlayer{
     @Value("${musicPlayer.volume}")
     private int volume;
 
-/*    @Autowired*/
+    @Autowired
     public MusicPlayer(@Qualifier("jazzMusic") Music jm,
                        @Qualifier("classicalMusic") Music cm,
                        @Qualifier("rockMusic") Music rm) {

@@ -10,12 +10,12 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-/*@Component*/
+@Component
 @Configuration
 @PropertySource("classpath:musicPlayer.properties")
-/*@ComponentScan("org.example")*/
+@ComponentScan("org.example")
 public class SpringConfig {
-    @Bean
+/*    @Bean
     public ClassicalMusic classicalMusic(){
         return new ClassicalMusic();
     }
@@ -52,5 +52,5 @@ public class SpringConfig {
     @Bean
     public ConnectToDB connectToDB(){
         return ConnectToDB.getConnection();
-    }
+    }*/
 }

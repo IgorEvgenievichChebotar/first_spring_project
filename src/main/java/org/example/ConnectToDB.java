@@ -1,10 +1,11 @@
 package org.example;
 
 import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.PreDestroy;
 
-/*@Component*/
+@Component
 public class ConnectToDB {
     private static final ConnectToDB connection = new ConnectToDB();
 

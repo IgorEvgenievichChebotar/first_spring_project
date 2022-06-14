@@ -4,7 +4,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Random;
 
-/*@Component*/
+@Component
 public class ClassicalMusic implements Music{
     String[] songs = {
             "Hungarian rhapsody",

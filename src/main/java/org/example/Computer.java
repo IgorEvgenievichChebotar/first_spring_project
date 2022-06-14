@@ -3,12 +3,12 @@ package org.example;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-/*@Component*/
+@Component
 public class Computer {
     private int id = 0;
     private final MusicPlayer mp;
 
-/*    @Autowired*/
+    @Autowired
     public Computer(MusicPlayer mp) {
         this.id += 1;
         this.mp = mp;
